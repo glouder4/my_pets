@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+		<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<meta http-equiv="x-ua-compatible" content="ie=edge">
+				<title>Панель администратора</title>
+				
+				<link rel="stylesheet" href="css/font-awesome.min.css">	
+				<link rel="stylesheet" href="../css/bootstrap.min.css" >
+				<script src="../js/poper.js" ></script>
+				<script src="../js/bootstrap.bundle.min.js" ></script>
+				<script src="../js/jquery-3-4-1.min.js" ></script>
+				<script src="../js/bootstrap.min.js" ></script>
+				<link rel="stylesheet" href="../css/Adminpanel.css">				
+		</head>
+		<body>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto row " id="Adminpanel">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="Hello_World"><h1>Добро пожаловать в панель администратора</h1></div>
+				<div id="add_element" class="col-xl-12 col-sm-12 col-md-12 col-lg-12 row">
+						<div class="col-xl-3 col-sm-3 col-md-3 col-lg-3"><a href="#" id="add_food">Добавить еду</a></div>
+						<div class="col-xl-3 col-sm-3 col-md-3 col-lg-3"><a href="#" id="add_clothes">Добавить одежду</a></div>
+						<div class="col-xl-3 col-sm-3 col-md-3 col-lg-3"><a href="#" id="add_bonus">Добавить бонусы</a></div>
+						<div class="col-xl-3 col-sm-3 col-md-3 col-lg-3"><a href="#" id="add_game">Добавить игры</a></div>
+				</div>
+			</div>
+			<div id="alert_bar" class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto">
+						<div id="whats_alert" class="row">123</div>
+					</div>
+				</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto row " id="add_food_form">
+				<div class="container">
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<h7><small>Название картинки </small> БЕЗ УКАЗАНИЯ РАСШИРЕНИЯ</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_image" placeholder="pollak"></input>
+					</div>					
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<h7>Название еды на любом из языков</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_name" placeholder="Вода"></input>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<h7>Стоимость</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_cost" placeholder="70"></input>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<h7>Колличество красоты за приобритение</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_butterflies" placeholder="7"></input>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto">
+						<h7>Колличество опыта за нажатие</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_expirience" placeholder="60"></input>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<h7>Колличество сердец за нажатие</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_hearts" placeholder="5"></input>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<button class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_food_button" >Добавить</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto row " id="add_clothes_form">
+				<div class="container">
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<h7>Название сета </h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_set_name" placeholder="Legendary set"></input>
+					</div>					
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<h7>Качество</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_set_rarity" placeholder="Best choice"></input>
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto row">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xl-4 col-xs-4">
+							<div class="dropdown open">
+							  <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Добавить накидку
+							  </a>
+
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<div class="dropdown-item" >
+									<h7><small>Название картинки </small> БЕЗ УКАЗАНИЯ РАСШИРЕНИЯ</h7><br>
+									<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_Tshirt_image" placeholder="suit1"></input>
+								</div>
+								<div class="dropdown-item" >
+									<h7>Колличество красоты за приобритение</h7><br>
+									<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_Tshirt_butterflies" placeholder="2"></input>
+								</div>
+								<div class="dropdown-item" >
+									<h7>Стоимость</h7><br>
+									<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_Tshirt_cost" placeholder="10"></input>
+								</div>
+							  </div>
+							</div>
+							
+						</div>					
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xl-4 col-xs-4">
+							<div class="dropdown open">
+							  <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Добавить штаны
+							  </a>
+
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<div class="dropdown-item" >
+									<h7><small>Название картинки </small> БЕЗ УКАЗАНИЯ РАСШИРЕНИЯ</h7><br>
+									<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_pants_image" placeholder="pants1"></input>
+								</div>
+								<div class="dropdown-item" >
+									<h7>Колличество красоты за приобритение</h7><br>
+									<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_pants_butterflies" placeholder="2"></input>
+								</div>
+								<div class="dropdown-item" >
+									<h7>Стоимость</h7><br>
+									<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_pants_cost" placeholder="10"></input>
+								</div>
+							  </div>
+							</div>
+							
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xl-4 col-xs-4">
+							<div class="dropdown open">
+							  <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Добавить галстук/бабочку
+							  </a>
+
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<div class="dropdown-item" >
+									<h7><small>Название картинки </small> БЕЗ УКАЗАНИЯ РАСШИРЕНИЯ</h7><br>
+									<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_tie_image" placeholder="bow1"></input>
+								</div>
+								<div class="dropdown-item" >
+									<h7>Колличество красоты за приобритение</h7><br>
+									<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_tie_butterflies" placeholder="2"></input>
+								</div>
+								<div class="dropdown-item" >
+									<h7>Стоимость</h7><br>
+									<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_tie_cost" placeholder="10"></input>
+								</div>
+							  </div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto row">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xl-4 col-xs-4">
+							<div class="dropdown open">
+							  <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Добавить ремень
+							  </a>
+
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<div class="dropdown-item" >
+									<h7><small>Название картинки </small> БЕЗ УКАЗАНИЯ РАСШИРЕНИЯ</h7><br>
+									<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_belt_image" placeholder="collar1"></input>
+								</div>
+								<div class="dropdown-item" >
+									<h7>Колличество красоты за приобритение</h7><br>
+									<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_belt_butterflies" placeholder="2"></input>
+								</div>
+								<div class="dropdown-item" >
+									<h7>Стоимость</h7><br>
+									<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_belt_cost" placeholder="10"></input>
+								</div>
+							  </div>
+							</div>
+							
+						</div>					
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xl-4 col-xs-4">
+							<div class="dropdown open">
+							  <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Добавить медаллион
+							  </a>
+
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<div class="dropdown-item" >
+									<h7><small>Название картинки </small> БЕЗ УКАЗАНИЯ РАСШИРЕНИЯ</h7><br>
+									<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_amulet_image" placeholder="medallion1"></input>
+								</div>
+								<div class="dropdown-item" >
+									<h7>Колличество красоты за приобритение</h7><br>
+									<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_amulet_butterflies" placeholder="2"></input>
+								</div>
+								<div class="dropdown-item" >
+									<h7>Стоимость</h7><br>
+									<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_amulet_cost" placeholder="10"></input>
+								</div>
+							  </div>
+							</div>
+							
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xl-4 col-xs-4">
+							<div class="dropdown open">
+							  <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Добавить кольцо
+							  </a>
+
+							  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<div class="dropdown-item" >
+									<h7><small>Название картинки </small> БЕЗ УКАЗАНИЯ РАСШИРЕНИЯ</h7><br>
+									<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_ring_image" placeholder="ring1"></input>
+								</div>
+								<div class="dropdown-item" >
+									<h7>Колличество красоты за приобритение</h7><br>
+									<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_ring_butterflies" placeholder="2"></input>
+								</div>
+								<div class="dropdown-item" >
+									<h7>Стоимость</h7><br>
+									<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_ring_cost" placeholder="10"></input>
+								</div>
+							  </div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<button class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_set_button" >Добавить</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto row " id="add_bonus_form">
+				<div class="container">
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<h7>УКАЖИТЕ ПУТЬ ДО ФАЙЛА</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_bonus_image" placeholder="../image/item/vip1.png"></input>
+					</div>					
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<h7>Название бонуса на любом из языков</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_bonus_name" placeholder="VIP"></input>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<h7>Стоимость</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_bonus_cost" placeholder="170"></input>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto">
+						<h7>Колличество бонусных бабочек за каждую медаль(число либо none) </h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_bonus_butterflies" placeholder="10"></input>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto">
+						<h7>Колличество бонусного опыта в % </h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_bonus_expirience" placeholder="300"></input>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<h7>Колличество бонусных сердец за нажатие в %</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_bonus_hearts" placeholder="5"></input>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<h7>Длительность в часах</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_bonus_duration" placeholder="24"></input>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<button class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_bonus_button" >Добавить</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto row " id="add_game_form">
+				<div class="container">
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<h7><small>Название картинки </small> БЕЗ УКАЗАНИЯ РАСШИРЕНИЯ</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_game_image" placeholder="hand"></input>
+					</div>					
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<h7>Название еды на любом из языков</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_game_name" placeholder="Погладить"></input>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<h7>Стоимость</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_game_cost" placeholder="70"></input>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<h7>Колличество красоты за приобритение</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_game_butterflies" placeholder="7"></input>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto">
+						<h7>Колличество опыта за нажатие</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_game_expirience" placeholder="60"></input>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<h7>Колличество сердец за нажатие</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_game_hearts" placeholder="5"></input>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<h7>Колличество монет за нажатие</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_game_Lcoins" placeholder="5"></input>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<h7>Колличество зарядов (число либо none)</h7>
+						<input class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_game_charges" placeholder="5"></input>
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7 col-xs-7 mx-auto  ">
+						<button class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="add_game_button" >Добавить</button>
+					</div>
+				</div>
+			</div>
+			<script src="../js/Adminpanel.js"></script>
+		</body>
+</html>

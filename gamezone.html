@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+		<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<meta http-equiv="x-ua-compatible" content="ie=edge">
+				<title>Мой питомец</title>
+				
+				<link rel="stylesheet" href="../css/fonts/font-awesome.min.css">	
+				<link rel="stylesheet" href="../css/bootstrap.min.css" >
+				<script src="../js/jquery-3-4-1.min.js" ></script>
+				<script src="../js/bootstrap.min.js" ></script>
+				<link rel="stylesheet" href="../css/document.css">
+				<link rel="stylesheet" href="../css/Pets_gamezone.css">		
+				<link rel="stylesheet" href="../css/chat.css">
+				<script src="../socket.io/socket.io.js"></script>
+		</head>
+		<body>
+				<div class="property col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 row">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xl-3 col-xs-3">
+						<img id="avatar" src="../img/ava/avatar_#.png" />
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xl-3 col-xs-3 row">
+						<img src="../image/icons/beauty.png" /><div id="butterflies"></div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xl-3 col-xs-3">
+						<img src="../image/icons/coin.png" /><div id="Lcoins"></div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xl-3 col-xs-3">
+						<img src="../image/icons/heart.png" /><div id="hearts"></div>
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto levelprogress row">
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xl-2 col-xs-2 row">
+						<img src="../img/ico16-up.png"/><div id="level_count"></div>
+					</div>
+					<div class="col-lg-9 col-md-9 col-sm-9 col-xl-9 col-xs-9 ">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12"></div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xl-2 col-xs-2 row">
+						<div id="level_percent"></div>
+					</div>
+				</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto" id="gamezone">
+				<div id="progress_bar" class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto">
+						<div id="whats_progress" class="row"></div>
+					</div>
+				</div>
+				<div id="alert_bar" class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto">
+						<div id="whats_alert" class="row"></div>
+					</div>
+				</div>
+				
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto Pets_eat_item row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xl-4 col-xs-4 Pets_action_bar">
+						<div id="eat_1_form" class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto Pets_action"><img id="eat_1" src="#" /></div>
+						<div id="eat_1_formtext" class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto Pets_action_text"><h6></h6></div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xl-4 col-xs-4 Pets_action_bar">
+						<div id="eat_2_form" class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto Pets_action"><img id="eat_2" src="../img/#.png" /></div>
+						<div id="eat_2_formtext" class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto Pets_action_text"><h6></h6></div>
+					</div>
+					<div  class="col-lg-4 col-md-4 col-sm-4 col-xl-4 col-xs-4 Pets_action_bar">
+						<div id="eat_3_form" class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto Pets_action"><img id="eat_3" src="../img#.png" /></div>
+						<div id="eat_3_formtext" class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto Pets_action_text"><h6></h6></div>
+					</div>
+				</div>
+				
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto row " id="Pets_shop">
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xl-3 col-xs-3"><img src="../img/ico20-shop.png"></div>
+						<div class="col-lg-9 col-md-9 col-sm-9 col-xl-9 col-xs-9"><a href="shop.html"><h5>Магазин<h5></a></div>
+				</div>			
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 mx-auto row " id="navigation">
+						<a href="../gamezone.html"><div class="col-lg-6 col-md-6 col-sm-6 col-xl-6 col-xs-6">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12">
+								<img src="../img/bmenu-home.png"/>
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12">
+								Главная
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xl-6 col-xs-6">
+						<a href="../Profile.html"><div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12">
+							<img src="../img/ava0.png"/>
+						</div>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12">
+							Питомец
+						</div>
+						</a>
+					</div>
+				</div>
+			<div id="chat" class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 row" id="tabs">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xl-4 col-xs-4 chat_tab">Общий</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xl-4 col-xs-4 chat_tab">Торговля</div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 row" id="chat_area">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 row" id="chat_text">
+						текст
+					</div>
+					<div class="col-lg-9 col-md-9 col-sm-9 col-xl-9 col-xs-9"><input></input></div><div class="col-lg-3 col-md-3 col-sm-3 col-xl-3 col-xs-3"><button>Отправить</button></div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12"><h5>Игроки онлайн</h5></div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 row" id="players_online">	
+				</div>
+			</div>		
+		<script src="../js/document.js"></script>	
+		<script src="../js/chat.js"></script>
+		</body>
+</html>
